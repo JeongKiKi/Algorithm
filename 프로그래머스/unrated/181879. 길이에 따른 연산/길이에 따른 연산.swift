@@ -5,17 +5,12 @@ func solution(_ num_list:[Int]) -> Int {
     
     if num_list.count >= 11 {
          var a: Int = 0 
-      for i in num_list {
-          a = a + i
-          
-      }
+      a =  num_list.reduce(0, +)
         return Int( a)
     }else {
         var b: Int  = 1
-        for k in num_list {
-            b = b * k
-            
-        }
+       
+        b = num_list.reduce(1, *)
         return b
     }
     
