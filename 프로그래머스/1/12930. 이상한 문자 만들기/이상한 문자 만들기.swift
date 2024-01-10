@@ -6,9 +6,9 @@ func solution(_ s:String) -> String {
         var c = ""
         for (index, numbers) in i.enumerated() {
            if index % 2 == 0 {
-               c += numbers.uppercased()
+               c += String(numbers).uppercased()
            }else{
-               c += numbers.lowercased()
+               c += String(numbers).lowercased()
            }
         }
         b += c + " "
