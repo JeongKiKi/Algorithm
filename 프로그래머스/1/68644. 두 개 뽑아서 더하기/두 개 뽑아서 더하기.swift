@@ -8,7 +8,7 @@ func solution(_ numbers:[Int]) -> [Int] {
         a.append(c)  
         }
     }
-    a.sort()
+   
     let kkk = Set(a)
     var kr = Array(kkk)
     kr.sort()
