@@ -9,8 +9,8 @@ func solution(_ str_list:[String]) -> [String] {
             return Array(str_list[a...])
         }
     }
-    if !str_list.contains("l") || !str_list.contains("r"){
-        return []
-    }
+    // if !str_list.contains("l") || !str_list.contains("r"){
+    //     return []
+    // }
     return []
 }
