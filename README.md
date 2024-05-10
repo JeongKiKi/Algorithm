@@ -16,3 +16,16 @@ let startIndex = str.index(str.startIndex, offsetBy: 7) // 문자열의 7번째 
 let endIndex = str.index(str.endIndex, offsetBy: -1) // 문자열의 마지막 인덱스 <br/>
 let range = startIndex..<endIndex<br/>
 let substring = str.substring(with: range) // "World" <br/>
+
+## enumerated() 
+### enumerated()는 배열 딕셔너리 등 각 요소와 해당 요소의 인덱스를 반환하는데 사용되는 메서드이다.
+let array = ["apple", "banana", "orange"] <br/>
+
+for (index, value) in array.enumerated() { <br/>
+    print("Index: \(index), Value: \(value)") <br/>
+} <br/>
+/*  <br/>
+Index: 0, Value: apple <br/>
+Index: 1, Value: banana <br/>
+Index: 2, Value: orange <br/>
+/* <br/>
