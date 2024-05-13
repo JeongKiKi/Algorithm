@@ -29,3 +29,19 @@ Index: 0, Value: apple <br/>
 Index: 1, Value: banana <br/>
 Index: 2, Value: orange <br/>
 /* <br/>
+
+## stride() 
+stride(from: 시작값, to: 끝값, by: 간격) <br/>
+stride(from: 시작값, through: 끝값, by: 간격) <br/>
+
+/*from: 순회를 시작하는 값입니다. <br/>
+to 또는 through: 순회를 종료하는 값입니다. to는 종료 값이 포함되지 않고, <br/>
+through는 종료 값이 포함됩니다. <br/>
+by: 간격을 나타내는 값으로, 순회하는 값들 간의 차이를 의미합니다. <br/>
+예를 들어, stride(from: 1, to: 10, by: 2)는 1부터 9까지 2의 간격으로 순회합니다. <br/> 
+결과는 [1, 3, 5, 7, 9]가 됩니다. 반면, stride(from: 1, through: 10, by: 2)는  <br/>
+1부터 10까지 2의 간격으로 순회하며, 결과는 [1, 3, 5, 7, 9]가 됩니다. <br/>
+
+위의 설명을 바탕으로, 코드에서 stride(from: a, through: b, by: c)는  <br/>
+a부터 b까지 c의 간격으로 순회하는 것을 의미합니다. <br/>
+*/ <br/>
