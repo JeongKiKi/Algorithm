@@ -58,3 +58,18 @@ let extraRow: [Int] = [5, 6] <br/>
 // 이차원 배열의 마지막 행에 새로운 행을 추가합니다. <br/>
 arr.append(contentsOf: [extraRow]) <br/>
 [[1, 2], [3, 4], [5, 6]] <br/>
+
+## .sort() (원본 수정)
+
+var arr = [1, 2, 5, 4, 6] <br/>
+arr.sort() <br/>
+print(arr) // [1 <br/>, 2, 4, 5, 6]
+var arr = [1, 2, 5, 4, 6] <br/>
+arr.sorted()  <br/>
+print(arr) // [1, 2, 5, 4, 6] <br/>
+
+## .sorted() (사본 생성)
+var arr = [1, 2, 5, 4, 6] <br/>
+var copied = arr.sorted() <br/>
+print(arr) // [1, 2, 5, 4, 6] <br/>
+print(copied) // [1, 2, 4, 5, 6] <br/>
